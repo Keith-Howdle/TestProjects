@@ -17,5 +17,5 @@ class UserSeeder extends Seeder
         //create users
         \App\Models\User::factory(10)->create();
     }
-    }
 }
+

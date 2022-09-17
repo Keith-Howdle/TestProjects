@@ -50,7 +50,7 @@ class ProductController extends Controller
         Product::create($request->all());
 
         //redirect user
-        return redirect()->route('products.index')->with('sucess' ,'Product creaated successfully');
+        return redirect()->route('products.index')->with('sucess' ,'Product created successfully');
 
     }
 

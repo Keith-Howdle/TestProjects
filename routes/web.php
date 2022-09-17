@@ -19,7 +19,8 @@ Route::get('/', function () {
 });
 
 
-Route::get('users', [UserController::class, 'index'])->name('users.index');
+// Route::get('users', [UserController::class, 'index'])->name('users.index');
 // Route::get('users', [UserController::class, 'index'])->name('users.index');
 
 Route::resource('products', ProductController::class);
+Route::resource('users', UserController::class);

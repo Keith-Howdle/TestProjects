@@ -14,10 +14,9 @@ class ProductsSeeder extends Seeder
     public function run()
     {
         //create products
-        $product = new |App\Models\Product([
-            'name' =>'Product #1';
+        $product = new \App\Models\Product([
+            'name' =>'Product #1',
             'detail' => 'Product #1 details'
-
         ]);
         $product->save();
     }
