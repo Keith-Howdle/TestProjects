@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\EmpController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,9 +19,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
-// Route::get('users', [UserController::class, 'index'])->name('users.index');
-// Route::get('users', [UserController::class, 'index'])->name('users.index');
-
 Route::resource('products', ProductController::class);
 Route::resource('users', UserController::class);
+
+
+Route::get('employee', [EmpController::class, 'index']);
+Route::get('emp/listing', [EmpController::class, 'getEmployees'])->name('emp.listing');
